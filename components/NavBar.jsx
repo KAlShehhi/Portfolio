@@ -4,12 +4,10 @@ import GlassmorphismDiv from "../util/GlassmorphismDiv";
 import github from "../src/assets/github.svg";
 import linkedin from "../src/assets/linkedin.svg";
 
-const tabs = ["home", "projects", "experience", "contact"];
+const tabs = ["home", "expertise", "experience", "projects"];
 
 export default function NavBar() {
     const [activeTab, setActiveTab] = useState("home");
-
-    // Scroll observer to update active tab
     useEffect(() => {
         const handleIntersect = (entries) => {
             entries.forEach((entry) => {
@@ -18,23 +16,19 @@ export default function NavBar() {
                 }
             });
         };
-
         const observer = new IntersectionObserver(handleIntersect, {
             threshold: 0.6,
         });
-
         tabs.forEach((id) => {
             const section = document.getElementById(id);
             if (section) observer.observe(section);
         });
-
         return () => observer.disconnect();
     }, []);
 
     return (
-        <div className="flex w-full fixed  z-50 items-center p-3 justify-between">
-            {/* Left: Tabs */}
-            <GlassmorphismDiv otherStyles="flex space-x-5 relative">
+        <div className="flex  w-full fixed  z-50 items-center lg:p-3 md:justify-between justify-center">
+            <div className={`p-6 lg:p-3 backdrop-blur-md bg-white/20  lg:border border-white/30 lg:rounded-2xl shadow-md flex space-x-2 relative justify-center`}>
                 {tabs.map((tab) => (
                     <button
                         key={tab}
@@ -58,10 +52,8 @@ export default function NavBar() {
                         )}
                     </button>
                 ))}
-            </GlassmorphismDiv>
-
-            {/* Right: Social Icons */}
-            <div className="flex flex-row space-x-5">
+            </div>
+            <div className="md:flex hidden flex-row space-x-5 pr-6">
                 <div onClick={() => window.open("https://github.com/KAlShehhi", "_blank")}>
                     <img src={github} alt="github icon" className="w-8 h-8 object-contain cursor-pointer" />
                 </div>

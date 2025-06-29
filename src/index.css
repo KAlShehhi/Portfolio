@@ -21,3 +21,9 @@
     color: white;
   }
 }
+
+.custom-date {
+  margin-top: 20px;
+  margin-left: 20px;
+  /* tweak this as needed */
+}

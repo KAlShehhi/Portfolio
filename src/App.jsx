@@ -9,9 +9,7 @@ export default function App() {
             <BrowserRouter>
                 <Routes>
                     <Route element={<MainLayout />}>
-                        <Route path="/" element={<Navigate to="/Home" replace />} />
-                        <Route path="/Home" element={<Home />} />
-
+                        <Route path="*" element={<Home />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

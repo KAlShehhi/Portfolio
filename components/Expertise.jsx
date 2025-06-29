@@ -17,11 +17,9 @@ import HorizontalLineBreak from "../components/HorizontalLineBreak";
 export default function Expertise() {
     return (
         <>
-            <div>
-                <p className="text-3xl font-bold">My Expertise</p>
-            </div>
+
             <div className="my-10">
-                <div className="flex flex-row space-x-5">
+                <div className="flex flex-col lg:flex-row lg:space-x-5 space-x-0 space-y-3">
                     <TechShowcase icon={reactLogo} name="React" desc="Frontend library for building UIs" />
                     <TechShowcase icon={expo} name="Expo" desc="Framework for building React Native apps fast" />
                     <TechShowcase icon={tailwindcss} name="Tailwind" desc="Utility-first CSS framework" />

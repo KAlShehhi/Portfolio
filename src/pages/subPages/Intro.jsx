@@ -17,9 +17,8 @@ export default function Intro() {
                     rotation={45}
                 />
             </div>
-            {/* Center content */}
             <div className="relative z-20 flex items-center justify-center h-full flex-col">
-                <GlassmorphismDiv otherStyles={"p-10"}>
+                <GlassmorphismDiv otherStyles={"p-10 mx-5"}>
                     <NameCard />
                 </GlassmorphismDiv>
             </div>
