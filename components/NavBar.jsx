@@ -27,8 +27,8 @@ export default function NavBar() {
     }, []);
 
     return (
-        <div className="flex  w-full fixed  z-50 items-center lg:p-3 md:justify-between justify-center">
-            <div className={`p-6 lg:p-3 backdrop-blur-md bg-white/20  lg:border border-white/30 lg:rounded-2xl shadow-md flex space-x-2 relative justify-center`}>
+        <div className="flex  w-full fixed  z-50 items-center sm:p-3 md:justify-between justify-center">
+            <div className={`p-6 sm:p-3 backdrop-blur-md bg-white/20  lg:border border-white/30 sm:rounded-2xl shadow-md flex space-x-1 relative justify-center`}>
                 {tabs.map((tab) => (
                     <button
                         key={tab}
@@ -36,7 +36,7 @@ export default function NavBar() {
                             const section = document.getElementById(tab);
                             section?.scrollIntoView({ behavior: "smooth" });
                         }}
-                        className={`relative cursor-pointer z-10 px-4 py-3 font-semibold transition-colors duration-300 ${activeTab === tab ? "text-white" : "text-gray-400"
+                        className={`relative cursor-pointer z-10 px-3 py-3 font-semibold transition-colors duration-300 ${activeTab === tab ? "text-white" : "text-gray-400"
                             }`}
                     >
                         {tab.charAt(0).toUpperCase() + tab.slice(1)}
