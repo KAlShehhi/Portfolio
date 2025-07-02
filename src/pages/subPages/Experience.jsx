@@ -10,12 +10,12 @@ import dp from '../../assets/dp.png'
 import Squares from '../../../util/animations/Squares';
 export default function Experience() {
     return (
-        <div className="w-full h-full relative border-b border-primary">
+        <div className="w-full h-full relative border-b border-primary ">
             <div className="absolute inset-0 z-0">
                 <Squares
                     speed={0.1}
                     squareSize={80}
-                    direction='up' // up, down, left, right, diagonal
+                    direction='up' 
                     borderColor='#32B9AE'
                     hoverFillColor='#32B9AE'
                 />
@@ -24,7 +24,7 @@ export default function Experience() {
                 <GlassmorphismDiv otherStyles={"p-10"}>
                     <SplitText
                         text="Education & Experience"
-                        className="font-black text-white text-4xl"
+                        className="font-black text-white text-4xl text-wrap"
                         delay={30}
                         duration={0.3}
                         ease="power3.out"
