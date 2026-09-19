@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "../ui/sheet";
 import { CV_URL, LINKEDIN_URL, MAILTO } from "@/lib/links";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function NavBar() {
   return (
@@ -14,6 +15,7 @@ export function NavBar() {
         <h1 className="truncate">Khalifa AlShehhi</h1>
       </div>
       <div className="hidden lg:flex items-center gap-3">
+
         <Button
           variant="secondary"
           className="transition-transform hover:scale-[1.03]"
@@ -33,8 +35,10 @@ export function NavBar() {
         >
           LinkedIn
         </Button>
+        <ThemeToggle />
       </div>
-      <div className="flex lg:hidden">
+      <div className="flex lg:hidden items-center gap-1">
+        <ThemeToggle />
         <Sheet>
           <SheetTrigger>
             <Button variant="ghost" size="icon">

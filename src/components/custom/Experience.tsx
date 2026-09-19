@@ -56,75 +56,89 @@ export function Experience() {
         <SectionHeading index="01 - PATH" title="Experience & Education" />
         <div className="flex flex-col gap-3">
           <ExperienceItem
-            date={"2026 - NOW"}
-            title="Sr. Analyst"
             company="e&"
             location="Abu Dhabi"
-            type="Full Time"
-            isCurrent={true}
             isWork={true}
             isLast={false}
+            roles={[
+              {
+                date: "2026 - NOW",
+                title: "Sr. Analyst",
+                type: "Full Time",
+                isCurrent: true,
+              },
+              {
+                date: "2025 - 2026",
+                title: "Analyst",
+                type: "Full Time",
+                description:
+                  "I completed a graduate program at e&, where I worked alongside experienced engineers and gained hands on exposure to how software is built and delivered in a real production environment.",
+              },
+            ]}
           />
           <ExperienceItem
-            date={"2025 - 2026"}
-            title="Analyst"
-            company="e&"
-            location="Abu Dhabi"
-            type="Full Time"
-            isCurrent={false}
-            description="I completed a graduate program at e&, where I worked alongside experienced engineers and gained hands on exposure to how software is built and delivered in a real production environment."
-            isWork={true}
-            isLast={false}
-          />
-          <ExperienceItem
-            date={"2024 - 2024"}
-            title="Web developer"
             company="Dubai Police"
             location="Dubai"
-            type="Internship"
-            isCurrent={false}
-            description="During my time at Dubai Police, I built a full stack MERN application end to end, from database and APIs to the user interface. I presented the finished project to senior stakeholders and executive leadership."
             isWork={true}
             isLast={false}
+            roles={[
+              {
+                date: "2024 - 2024",
+                title: "Web developer",
+                type: "Internship",
+                description:
+                  "During my time at Dubai Police, I built a full stack MERN application end to end, from database and APIs to the user interface. I presented the finished project to senior stakeholders and executive leadership.",
+              },
+            ]}
           />
           <ExperienceItem
-            date={"2021 - 2024"}
-            title="BSc in Computer Science"
             company="United Arab Emirates University"
             location="Al Ain"
-            isCurrent={false}
-            description="Completed my Bachelor’s degree in Computer Science at the United Arab Emirates University (UAEU), where I gained a strong foundation in software development, data structures, algorithms, and system design."
             isWork={false}
             isLast={false}
+            roles={[
+              {
+                date: "2021 - 2024",
+                title: "BSc in Computer Science",
+                description:
+                  "Completed my Bachelor’s degree in Computer Science at the United Arab Emirates University (UAEU), where I gained a strong foundation in software development, data structures, algorithms, and system design.",
+              },
+            ]}
           />
           <ExperienceItem
-            date={"2019 - 2020"}
-            title="Military Service"
             location="United Arab Emirates"
-            isCurrent={false}
             isWork={true}
             isLast={false}
+            roles={[{ date: "2019 - 2020", title: "Military Service" }]}
           />
           <ExperienceItem
-            date={"2019 - 2019"}
-            title="IT technician"
             company="Electronic Goverment Autority"
             location="Ras Al Khaimah"
-            type="Internship"
-            isCurrent={false}
-            description="Completed an IT Support internship at the Electronic Government Authority, assisting in troubleshooting hardware and software issues, supporting end-users, and maintaining system functionality."
             isWork={true}
             isLast={false}
+            roles={[
+              {
+                date: "2019 - 2019",
+                title: "IT technician",
+                type: "Internship",
+                description:
+                  "Completed an IT Support internship at the Electronic Government Authority, assisting in troubleshooting hardware and software issues, supporting end-users, and maintaining system functionality.",
+              },
+            ]}
           />
           <ExperienceItem
-            date={"2015 - 2019"}
-            title="Computer Science"
             company="Applied Technology Schools"
             location="Ras Al Khaimah"
-            isCurrent={false}
-            description="Completed a specialized high school program with a focus on computer science fundamentals, including programming, networks, and IT systems."
             isWork={false}
             isLast={true}
+            roles={[
+              {
+                date: "2015 - 2019",
+                title: "Computer Science",
+                description:
+                  "Completed a specialized high school program with a focus on computer science fundamentals, including programming, networks, and IT systems.",
+              },
+            ]}
           />
         </div>
         <SectionHeading index="02 - Selected Work" title="Things I have shipped" />
